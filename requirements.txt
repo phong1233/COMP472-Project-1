@@ -1,3 +1,4 @@
 scikit-learn
 jupyterlab
 matplotlib
+numpy
