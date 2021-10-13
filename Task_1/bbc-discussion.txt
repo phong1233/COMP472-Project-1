@@ -1,0 +1,8 @@
+a) What metric is best suited to this dataset/task and why
+
+Looking at the distribution of instances in each class, we see a slight data imbalance towards the business and sport classes that have a bit over 500 documents while the classes entertainement, politics and tech over at around 400 documents. This can mean that the accuracy metric might not be the best to evaluate the dataset.
+
+In the case of this task and like a search, the important is to correctly classify the texts we have and , therefore, the metric 
+
+b) Explain why the performance of steps (8-10) are the same or are different than those of steps (7) above
+
