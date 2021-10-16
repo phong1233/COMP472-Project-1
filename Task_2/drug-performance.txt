@@ -1,0 +1,165 @@
+------------------------------------------------------------------
+
+Gaussian Naive Bayes Classifier with the default parameters
+
+1. Confusion matrix
+
+[[ 8  0  0  0  0]
+ [ 0  2  0  0  0]
+ [ 0  0  9  0  0]
+ [ 0  0  0 12  0]
+ [ 1  1  2  0 15]]
+
+2. precision, recall, and F1-measure for each class
+
+              precision    recall  f1-score   support
+
+       drugA       0.89      1.00      0.94         8
+       drugB       0.67      1.00      0.80         2
+       drugC       0.82      1.00      0.90         9
+       drugX       1.00      1.00      1.00        12
+       drugY       1.00      0.79      0.88        19
+
+    accuracy                           0.92        50
+   macro avg       0.87      0.96      0.90        50
+weighted avg       0.94      0.92      0.92        50
+
+3. accuracy, macro-average F1 and weighted-average F1 of the model
+
+Accuracy: 0.92
+Macro-average: 0.9047058823529411
+Weighted-average: 0.9047058823529411
+
+------------------------------------------------------------------
+
+Decision Tree with the default parameters
+
+1. Confusion matrix
+
+[[ 8  0  0  0  0]
+ [ 0  2  0  0  0]
+ [ 0  0  9  0  0]
+ [ 0  0  0 12  0]
+ [ 0  0  0  0 19]]
+
+2. precision, recall, and F1-measure for each class
+
+              precision    recall  f1-score   support
+
+       drugA       1.00      1.00      1.00         8
+       drugB       1.00      1.00      1.00         2
+       drugC       1.00      1.00      1.00         9
+       drugX       1.00      1.00      1.00        12
+       drugY       1.00      1.00      1.00        19
+
+    accuracy                           1.00        50
+   macro avg       1.00      1.00      1.00        50
+weighted avg       1.00      1.00      1.00        50
+
+3. accuracy, macro-average F1 and weighted-average F1 of the model
+
+Accuracy: 1.0
+Macro-average: 1.0
+Weighted-average: 1.0
+
+------------------------------------------------------------------
+
+Decision Tree using GridSearchCV with hyper-parameters:
+	- criterion: gini or entropy
+	- max depth : 2 different values of your choice
+	- min samples split: 3 different values of your choice
+
+1. Confusion matrix
+
+[[ 6  2  0  0  0]
+ [ 0  2  0  0  0]
+ [ 0  0  0  9  0]
+ [ 0  0  0  9  3]
+ [ 0  0  0  1 18]]
+
+2. precision, recall, and F1-measure for each class
+
+              precision    recall  f1-score   support
+
+       drugA       1.00      0.75      0.86         8
+       drugB       0.50      1.00      0.67         2
+       drugC       0.00      0.00      0.00         9
+       drugX       0.47      0.75      0.58        12
+       drugY       0.86      0.95      0.90        19
+
+    accuracy                           0.70        50
+   macro avg       0.57      0.69      0.60        50
+weighted avg       0.62      0.70      0.65        50
+
+3. accuracy, macro-average F1 and weighted-average F1 of the model
+
+Accuracy: 0.7
+Macro-average: 0.6008909370199692
+Weighted-average: 0.6008909370199692
+
+------------------------------------------------------------------
+
+Perceptron with default parameter values
+
+1. Confusion matrix
+
+[[ 0  0  1  0  7]
+ [ 0  0  1  0  1]
+ [ 0  0  0  0  9]
+ [ 0  0  2  0 10]
+ [ 0  0  0  0 19]]
+
+2. precision, recall, and F1-measure for each class
+
+              precision    recall  f1-score   support
+
+       drugA       0.00      0.00      0.00         8
+       drugB       0.00      0.00      0.00         2
+       drugC       0.00      0.00      0.00         9
+       drugX       0.00      0.00      0.00        12
+       drugY       0.41      1.00      0.58        19
+
+    accuracy                           0.38        50
+   macro avg       0.08      0.20      0.12        50
+weighted avg       0.16      0.38      0.22        50
+
+3. accuracy, macro-average F1 and weighted-average F1 of the model
+
+Accuracy: 0.38
+Macro-average: 0.11692307692307694
+Weighted-average: 0.11692307692307694
+
+------------------------------------------------------------------
+
+Multi-Layered Perceptron with 1 hidden layer of 100 neurons,
+sigmoid/logistic as activation function, stochastic gradient descent,
+and default values for the rest of the parameters
+
+1. Confusion matrix
+
+[[ 0  0  0  2  6]
+ [ 0  0  0  2  0]
+ [ 0  0  0  6  3]
+ [ 0  0  0  7  5]
+ [ 0  0  0  0 19]]
+
+2. precision, recall, and F1-measure for each class
+
+              precision    recall  f1-score   support
+
+       drugA       0.00      0.00      0.00         8
+       drugB       0.00      0.00      0.00         2
+       drugC       0.00      0.00      0.00         9
+       drugX       0.41      0.58      0.48        12
+       drugY       0.58      1.00      0.73        19
+
+    accuracy                           0.52        50
+   macro avg       0.20      0.32      0.24        50
+weighted avg       0.32      0.52      0.39        50
+
+3. accuracy, macro-average F1 and weighted-average F1 of the model
+
+Accuracy: 0.52
+Macro-average: 0.24270557029177722
+Weighted-average: 0.24270557029177722
+
