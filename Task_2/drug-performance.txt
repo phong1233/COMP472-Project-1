@@ -1,3 +1,208 @@
+------------------------------------------------------------------
+
+Gaussian naive bayes classifier with parameters:
+	- default
+
+1. Confusion matrix
+
+[[ 5  0  0  0  0]
+ [ 0  3  0  0  0]
+ [ 0  0  2  0  0]
+ [ 0  0  0 14  0]
+ [ 5  1  0  0 20]]
+
+2. precision, recall, and F1-measure for each class
+
+              precision    recall  f1-score   support
+
+       drugA       0.50      1.00      0.67         5
+       drugB       0.75      1.00      0.86         3
+       drugC       1.00      1.00      1.00         2
+       drugX       1.00      1.00      1.00        14
+       drugY       1.00      0.77      0.87        26
+
+    accuracy                           0.88        50
+   macro avg       0.85      0.95      0.88        50
+weighted avg       0.94      0.88      0.89        50
+
+3. accuracy, macro-average F1 and weighted-average F1 of the model
+
+Accuracy: 0.88
+Macro-average: 0.8786749482401657
+Weighted-average: 0.8786749482401657
+
+------------------------------------------------------------------
+
+Decision tree classifier with parameters:
+	- default
+
+1. Confusion matrix
+
+[[ 5  0  0  0  0]
+ [ 0  3  0  0  0]
+ [ 0  0  2  0  0]
+ [ 0  0  0 14  0]
+ [ 0  0  0  0 26]]
+
+2. precision, recall, and F1-measure for each class
+
+              precision    recall  f1-score   support
+
+       drugA       1.00      1.00      1.00         5
+       drugB       1.00      1.00      1.00         3
+       drugC       1.00      1.00      1.00         2
+       drugX       1.00      1.00      1.00        14
+       drugY       1.00      1.00      1.00        26
+
+    accuracy                           1.00        50
+   macro avg       1.00      1.00      1.00        50
+weighted avg       1.00      1.00      1.00        50
+
+3. accuracy, macro-average F1 and weighted-average F1 of the model
+
+Accuracy: 1.0
+Macro-average: 1.0
+Weighted-average: 1.0
+
+------------------------------------------------------------------
+
+Top decision tree classifier with parameters:
+	- criterion: gini or entropy
+	- max depth : 2 different values of your choice
+	- min samples split: 3 different values of your choice
+
+1. Confusion matrix
+
+[[ 5  0  0  0  0]
+ [ 0  3  0  0  0]
+ [ 0  0  2  0  0]
+ [ 0  0  0 14  0]
+ [ 0  0  0  0 26]]
+
+2. precision, recall, and F1-measure for each class
+
+              precision    recall  f1-score   support
+
+       drugA       1.00      1.00      1.00         5
+       drugB       1.00      1.00      1.00         3
+       drugC       1.00      1.00      1.00         2
+       drugX       1.00      1.00      1.00        14
+       drugY       1.00      1.00      1.00        26
+
+    accuracy                           1.00        50
+   macro avg       1.00      1.00      1.00        50
+weighted avg       1.00      1.00      1.00        50
+
+3. accuracy, macro-average F1 and weighted-average F1 of the model
+
+Accuracy: 1.0
+Macro-average: 1.0
+Weighted-average: 1.0
+
+------------------------------------------------------------------
+
+Perceptron classifier with parameters:
+	- default
+
+1. Confusion matrix
+
+[[ 3  0  0  2  0]
+ [ 0  0  0  3  0]
+ [ 0  0  0  1  1]
+ [ 0  0  0 10  4]
+ [ 0  0  0  5 21]]
+
+2. precision, recall, and F1-measure for each class
+
+              precision    recall  f1-score   support
+
+       drugA       1.00      0.60      0.75         5
+       drugB       0.00      0.00      0.00         3
+       drugC       0.00      0.00      0.00         2
+       drugX       0.48      0.71      0.57        14
+       drugY       0.81      0.81      0.81        26
+
+    accuracy                           0.68        50
+   macro avg       0.46      0.42      0.43        50
+weighted avg       0.65      0.68      0.66        50
+
+3. accuracy, macro-average F1 and weighted-average F1 of the model
+
+Accuracy: 0.68
+Macro-average: 0.42582417582417575
+Weighted-average: 0.42582417582417575
+
+------------------------------------------------------------------
+
+Multi layered perceptron classifier with parameters:
+	- 1 hidden layer of 100 neurons
+	- sigmoid/logistic as activation function
+	- stochastic gradient descent
+	- default values for the rest of the parameters
+
+1. Confusion matrix
+
+[[ 0  0  0  2  3]
+ [ 0  0  0  3  0]
+ [ 0  0  0  0  2]
+ [ 0  0  0  5  9]
+ [ 0  0  0  1 25]]
+
+2. precision, recall, and F1-measure for each class
+
+              precision    recall  f1-score   support
+
+       drugA       0.00      0.00      0.00         5
+       drugB       0.00      0.00      0.00         3
+       drugC       0.00      0.00      0.00         2
+       drugX       0.45      0.36      0.40        14
+       drugY       0.64      0.96      0.77        26
+
+    accuracy                           0.60        50
+   macro avg       0.22      0.26      0.23        50
+weighted avg       0.46      0.60      0.51        50
+
+3. accuracy, macro-average F1 and weighted-average F1 of the model
+
+Accuracy: 0.6
+Macro-average: 0.23384615384615387
+Weighted-average: 0.23384615384615387
+
+------------------------------------------------------------------
+
+Top multi layered perceptron classifier with parameters:
+	- activation function: sigmoid, tanh, relu and identity
+	- 2 network architectures of your choice: for eg 2 hidden layers with 30 + 50 nodes, 3 hidden layers with 10 + 10 + 10
+	- solver: Adam and stochastic gradient descent
+
+1. Confusion matrix
+
+[[ 5  0  0  0  0]
+ [ 2  1  0  0  0]
+ [ 0  0  1  1  0]
+ [ 0  0  0 11  3]
+ [ 1  0  0  0 25]]
+
+2. precision, recall, and F1-measure for each class
+
+              precision    recall  f1-score   support
+
+       drugA       0.62      1.00      0.77         5
+       drugB       1.00      0.33      0.50         3
+       drugC       1.00      0.50      0.67         2
+       drugX       0.92      0.79      0.85        14
+       drugY       0.89      0.96      0.93        26
+
+    accuracy                           0.86        50
+   macro avg       0.89      0.72      0.74        50
+weighted avg       0.88      0.86      0.85        50
+
+3. accuracy, macro-average F1 and weighted-average F1 of the model
+
+Accuracy: 0.86
+Macro-average: 0.7415954415954416
+Weighted-average: 0.7415954415954416
+
 
 
 
@@ -6,9 +211,9 @@
 *****************************************************
 
 **** Gaussian naive bayes classifier ****
-Average accuracy: 0.900000
-Average macro-average f1: 0.861818
-Average weighted-average f1: 0.903273
+Average accuracy: 0.880000
+Average macro-average f1: 0.878675
+Average weighted-average f1: 0.890269
 Standard deviation accuracy: 0.000000
 Standard deviation macro-average f1: 0.000000
 Standard deviation weighted-average f1: 0.000000
@@ -30,133 +235,25 @@ Standard deviation macro-average f1: 0.000000
 Standard deviation weighted-average f1: 0.000000
 
 **** Perceptron classifier ****
-Average accuracy: 0.480000
-Average macro-average f1: 0.324000
-Average weighted-average f1: 0.349600
-Standard deviation accuracy: 0.000000
-Standard deviation macro-average f1: 0.000000
-Standard deviation weighted-average f1: 0.000000
-
-**** Multi layered perceptron classifier ****
-Average accuracy: 0.592000
-Average macro-average f1: 0.269415
-Average weighted-average f1: 0.498925
-Standard deviation accuracy: 0.025612
-Standard deviation macro-average f1: 0.014164
-Standard deviation weighted-average f1: 0.025819
-
-**** Top multi layered perceptron classifier ****
-Average accuracy: 0.862000
-Average macro-average f1: 0.769590
-Average weighted-average f1: 0.839247
-Standard deviation accuracy: 0.026000
-Standard deviation macro-average f1: 0.054079
-Standard deviation weighted-average f1: 0.029519
-
-
-
-*****************************************************
-************           Step #8      *****************
-*****************************************************
-
-**** Gaussian naive bayes classifier ****
-Average accuracy: 0.900000
-Average macro-average f1: 0.861818
-Average weighted-average f1: 0.903273
-Standard deviation accuracy: 0.000000
-Standard deviation macro-average f1: 0.000000
-Standard deviation weighted-average f1: 0.000000
-
-**** Decision tree classifier ****
-Average accuracy: 1.000000
-Average macro-average f1: 1.000000
-Average weighted-average f1: 1.000000
-Standard deviation accuracy: 0.000000
-Standard deviation macro-average f1: 0.000000
-Standard deviation weighted-average f1: 0.000000
-
-**** Top decision tree classifier ****
-Average accuracy: 1.000000
-Average macro-average f1: 1.000000
-Average weighted-average f1: 1.000000
-Standard deviation accuracy: 0.000000
-Standard deviation macro-average f1: 0.000000
-Standard deviation weighted-average f1: 0.000000
-
-**** Perceptron classifier ****
-Average accuracy: 0.480000
-Average macro-average f1: 0.324000
-Average weighted-average f1: 0.349600
+Average accuracy: 0.680000
+Average macro-average f1: 0.425824
+Average weighted-average f1: 0.655000
 Standard deviation accuracy: 0.000000
 Standard deviation macro-average f1: 0.000000
 Standard deviation weighted-average f1: 0.000000
 
 **** Multi layered perceptron classifier ****
 Average accuracy: 0.608000
-Average macro-average f1: 0.278023
-Average weighted-average f1: 0.514651
-Standard deviation accuracy: 0.018330
-Standard deviation macro-average f1: 0.009871
-Standard deviation weighted-average f1: 0.018019
+Average macro-average f1: 0.241844
+Average weighted-average f1: 0.522969
+Standard deviation accuracy: 0.020396
+Standard deviation macro-average f1: 0.013063
+Standard deviation weighted-average f1: 0.022072
 
 **** Top multi layered perceptron classifier ****
-Average accuracy: 0.824000
-Average macro-average f1: 0.683743
-Average weighted-average f1: 0.790224
-Standard deviation accuracy: 0.034409
-Standard deviation macro-average f1: 0.047218
-Standard deviation weighted-average f1: 0.040519
-
-
-
-*****************************************************
-************           Step #8      *****************
-*****************************************************
-
-**** Gaussian naive bayes classifier ****
-Average accuracy: 0.900000
-Average macro-average f1: 0.861818
-Average weighted-average f1: 0.903273
-Standard deviation accuracy: 0.000000
-Standard deviation macro-average f1: 0.000000
-Standard deviation weighted-average f1: 0.000000
-
-**** Decision tree classifier ****
-Average accuracy: 1.000000
-Average macro-average f1: 1.000000
-Average weighted-average f1: 1.000000
-Standard deviation accuracy: 0.000000
-Standard deviation macro-average f1: 0.000000
-Standard deviation weighted-average f1: 0.000000
-
-**** Top decision tree classifier ****
-Average accuracy: 1.000000
-Average macro-average f1: 1.000000
-Average weighted-average f1: 1.000000
-Standard deviation accuracy: 0.000000
-Standard deviation macro-average f1: 0.000000
-Standard deviation weighted-average f1: 0.000000
-
-**** Perceptron classifier ****
-Average accuracy: 0.480000
-Average macro-average f1: 0.324000
-Average weighted-average f1: 0.349600
-Standard deviation accuracy: 0.000000
-Standard deviation macro-average f1: 0.000000
-Standard deviation weighted-average f1: 0.000000
-
-**** Multi layered perceptron classifier ****
-Average accuracy: 0.594000
-Average macro-average f1: 0.270052
-Average weighted-average f1: 0.500130
-Standard deviation accuracy: 0.033526
-Standard deviation macro-average f1: 0.019514
-Standard deviation weighted-average f1: 0.035551
-
-**** Top multi layered perceptron classifier ****
-Average accuracy: 0.862000
-Average macro-average f1: 0.758667
-Average weighted-average f1: 0.836360
-Standard deviation accuracy: 0.034000
-Standard deviation macro-average f1: 0.073223
-Standard deviation weighted-average f1: 0.042291
+Average accuracy: 0.854000
+Average macro-average f1: 0.708286
+Average weighted-average f1: 0.838684
+Standard deviation accuracy: 0.041037
+Standard deviation macro-average f1: 0.095900
+Standard deviation weighted-average f1: 0.046725
