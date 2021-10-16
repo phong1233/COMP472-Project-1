@@ -1,0 +1,22 @@
+
+To determine if a model delivers the same performance every time, we need to look at the standard derivation of the accuracy, the macro-average F1 and the weighted-average F1.
+Looking at our results, we can see that the Gaussian naive bayes, the Decision tree, the Top decision tree and the Perceptron classifier had the same performance every time.
+Also, the Multi layered perceptron and the Top multi layered perceptron did not have the same performance every time.
+In the following paragraph, we will describe what is happening.
+
+First, something important to note is that we are using the same training set and test set when running the models.
+This means that the models are always trained and tested using the same set. Also, we are using the same hyper-parameters for each model.
+As such, even though we ran a model several times, a deterministic algorithm should always give the same output.
+
+Second, the gaussian naive bayes classifier is based on Bayes Theorem.
+As such, no matter how many times we run the algorithm, since the training set and hyper-parameters are the same, the probability will remain the same.
+The same goes for the decision tree classifier and the top decision tree classifier.
+The tree is built by calculating the information gain of each feature.
+This means that the decision tree will always look the same if the training set and the hyper-parameters remain the same.
+
+Finally, for the Perceptron, a single perceptron has the same performance every time it is run.
+However, this is not the case for the multi-layered one.
+A reason for this is that the Perceptron has predefined weight for each class.
+Also, the bias is calculated automatically so it will always remain the same.
+As for the multi-layered perceptron and the top multi-layered perceptron, the weight and the bias are random.
+As such, the model will be different with each run.

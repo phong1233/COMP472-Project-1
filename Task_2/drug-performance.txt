@@ -6,49 +6,157 @@
 *****************************************************
 
 **** Gaussian naive bayes classifier ****
-Average accuracy: 0.8400
-Average macro-average f1: 0.8300
-Average weighted-average f1: 0.8500
-Standard deviation accuracy: 0.0000
-Standard deviation macro-average f1: 0.0000
-Standard deviation weighted-average f1: 0.0000
+Average accuracy: 0.900000
+Average macro-average f1: 0.861818
+Average weighted-average f1: 0.903273
+Standard deviation accuracy: 0.000000
+Standard deviation macro-average f1: 0.000000
+Standard deviation weighted-average f1: 0.000000
 
 **** Decision tree classifier ****
-Average accuracy: 1.0000
-Average macro-average f1: 1.0000
-Average weighted-average f1: 1.0000
-Standard deviation accuracy: 0.0000
-Standard deviation macro-average f1: 0.0000
-Standard deviation weighted-average f1: 0.0000
+Average accuracy: 1.000000
+Average macro-average f1: 1.000000
+Average weighted-average f1: 1.000000
+Standard deviation accuracy: 0.000000
+Standard deviation macro-average f1: 0.000000
+Standard deviation weighted-average f1: 0.000000
 
 **** Top decision tree classifier ****
-Average accuracy: 1.0000
-Average macro-average f1: 1.0000
-Average weighted-average f1: 1.0000
-Standard deviation accuracy: 0.0000
-Standard deviation macro-average f1: 0.0000
-Standard deviation weighted-average f1: 0.0000
+Average accuracy: 1.000000
+Average macro-average f1: 1.000000
+Average weighted-average f1: 1.000000
+Standard deviation accuracy: 0.000000
+Standard deviation macro-average f1: 0.000000
+Standard deviation weighted-average f1: 0.000000
 
 **** Perceptron classifier ****
-Average accuracy: 0.5200
-Average macro-average f1: 0.2136
-Average weighted-average f1: 0.4187
-Standard deviation accuracy: 0.0000
-Standard deviation macro-average f1: 0.0000
-Standard deviation weighted-average f1: 0.0000
+Average accuracy: 0.480000
+Average macro-average f1: 0.324000
+Average weighted-average f1: 0.349600
+Standard deviation accuracy: 0.000000
+Standard deviation macro-average f1: 0.000000
+Standard deviation weighted-average f1: 0.000000
 
 **** Multi layered perceptron classifier ****
-Average accuracy: 0.5820
-Average macro-average f1: 0.2485
-Average weighted-average f1: 0.4850
-Standard deviation accuracy: 0.0060
-Standard deviation macro-average f1: 0.0041
-Standard deviation weighted-average f1: 0.0054
+Average accuracy: 0.592000
+Average macro-average f1: 0.269415
+Average weighted-average f1: 0.498925
+Standard deviation accuracy: 0.025612
+Standard deviation macro-average f1: 0.014164
+Standard deviation weighted-average f1: 0.025819
 
 **** Top multi layered perceptron classifier ****
-Average accuracy: 0.7820
-Average macro-average f1: 0.6342
-Average weighted-average f1: 0.7332
-Standard deviation accuracy: 0.0576
-Standard deviation macro-average f1: 0.0954
-Standard deviation weighted-average f1: 0.0668
+Average accuracy: 0.862000
+Average macro-average f1: 0.769590
+Average weighted-average f1: 0.839247
+Standard deviation accuracy: 0.026000
+Standard deviation macro-average f1: 0.054079
+Standard deviation weighted-average f1: 0.029519
+
+
+
+*****************************************************
+************           Step #8      *****************
+*****************************************************
+
+**** Gaussian naive bayes classifier ****
+Average accuracy: 0.900000
+Average macro-average f1: 0.861818
+Average weighted-average f1: 0.903273
+Standard deviation accuracy: 0.000000
+Standard deviation macro-average f1: 0.000000
+Standard deviation weighted-average f1: 0.000000
+
+**** Decision tree classifier ****
+Average accuracy: 1.000000
+Average macro-average f1: 1.000000
+Average weighted-average f1: 1.000000
+Standard deviation accuracy: 0.000000
+Standard deviation macro-average f1: 0.000000
+Standard deviation weighted-average f1: 0.000000
+
+**** Top decision tree classifier ****
+Average accuracy: 1.000000
+Average macro-average f1: 1.000000
+Average weighted-average f1: 1.000000
+Standard deviation accuracy: 0.000000
+Standard deviation macro-average f1: 0.000000
+Standard deviation weighted-average f1: 0.000000
+
+**** Perceptron classifier ****
+Average accuracy: 0.480000
+Average macro-average f1: 0.324000
+Average weighted-average f1: 0.349600
+Standard deviation accuracy: 0.000000
+Standard deviation macro-average f1: 0.000000
+Standard deviation weighted-average f1: 0.000000
+
+**** Multi layered perceptron classifier ****
+Average accuracy: 0.608000
+Average macro-average f1: 0.278023
+Average weighted-average f1: 0.514651
+Standard deviation accuracy: 0.018330
+Standard deviation macro-average f1: 0.009871
+Standard deviation weighted-average f1: 0.018019
+
+**** Top multi layered perceptron classifier ****
+Average accuracy: 0.824000
+Average macro-average f1: 0.683743
+Average weighted-average f1: 0.790224
+Standard deviation accuracy: 0.034409
+Standard deviation macro-average f1: 0.047218
+Standard deviation weighted-average f1: 0.040519
+
+
+
+*****************************************************
+************           Step #8      *****************
+*****************************************************
+
+**** Gaussian naive bayes classifier ****
+Average accuracy: 0.900000
+Average macro-average f1: 0.861818
+Average weighted-average f1: 0.903273
+Standard deviation accuracy: 0.000000
+Standard deviation macro-average f1: 0.000000
+Standard deviation weighted-average f1: 0.000000
+
+**** Decision tree classifier ****
+Average accuracy: 1.000000
+Average macro-average f1: 1.000000
+Average weighted-average f1: 1.000000
+Standard deviation accuracy: 0.000000
+Standard deviation macro-average f1: 0.000000
+Standard deviation weighted-average f1: 0.000000
+
+**** Top decision tree classifier ****
+Average accuracy: 1.000000
+Average macro-average f1: 1.000000
+Average weighted-average f1: 1.000000
+Standard deviation accuracy: 0.000000
+Standard deviation macro-average f1: 0.000000
+Standard deviation weighted-average f1: 0.000000
+
+**** Perceptron classifier ****
+Average accuracy: 0.480000
+Average macro-average f1: 0.324000
+Average weighted-average f1: 0.349600
+Standard deviation accuracy: 0.000000
+Standard deviation macro-average f1: 0.000000
+Standard deviation weighted-average f1: 0.000000
+
+**** Multi layered perceptron classifier ****
+Average accuracy: 0.594000
+Average macro-average f1: 0.270052
+Average weighted-average f1: 0.500130
+Standard deviation accuracy: 0.033526
+Standard deviation macro-average f1: 0.019514
+Standard deviation weighted-average f1: 0.035551
+
+**** Top multi layered perceptron classifier ****
+Average accuracy: 0.862000
+Average macro-average f1: 0.758667
+Average weighted-average f1: 0.836360
+Standard deviation accuracy: 0.034000
+Standard deviation macro-average f1: 0.073223
+Standard deviation weighted-average f1: 0.042291
