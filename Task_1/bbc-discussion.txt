@@ -2,65 +2,64 @@ a) What metric is best suited to this dataset/task and why
 
 Looking at the distribution of instances in each class, we see a slight data imbalance towards the business and sport classes that have a bit over 500 documents while the classes entertainement, politics and tech over at around 400 documents. This is seen in the prior probabilities as well where the business and sport classes account for an extra 5% each over the other classes. This can mean that the accuracy metric might not be the best to evaluate the dataset.
 
-In the case of this task and like a search, correctly classifying the texts is the most important, therefore the metric recall is a good indication of a task well done because it tries to minimize the false negatives.The weighted average recall is a good metric. The F1 measure is the best metric seen in class that is best suited to this task because it takes into account both recall and precision and the weighted version of the f1 measure takes into account data imbalances.
+In the case of this task and like a search, correctly classifying the texts is the most important task, therefore the metric recall is a good indication of a task well done because it tries to minimize the false negatives. The weighted average recall is a good metric. The F1 measure is the best metric seen in class that is best suited to this task because it takes into account both recall and precision and the weighted version of the f1 measure takes into account data imbalances.
 
 b) Explain why the performance of steps (8-10) are the same or are different than those of steps (7) above
 
 The performance of steps 8-10 are extremely similar to those of steps 7 for multiples reasons.
 
-Step 8 replicates the same fitting and predicting as Step 7 without changing any hyperparameters and we see that the performance are the same. This is because a Multinomial Naives Bayes classifier trained on the same data with the same parameters will always give the same results because this model is probabilistic. Therefore, it is evident that the same priors and posteriori probabilities are calculated in both steps.
+Step 8 replicates the same fitting and predicting as Step 7 without changing any hyperparameters and we see that the performance are the same. This is because a Multinomial Naives Bayes classifier trained on the same data with the same parameters will always give the same results because priors and posteriori probabilities are calculated in the same way in both steps and will equal the same. Hence, there is no random element to this algorithm.
 
-Step 9 and 10 introduces a smoothing prameter which handles the problem of 0 probability (if a word was never found in a class during training then it was excluded during prediction). Step 9 has a smoothing value of 0.0001 which is very small but which make a difference in the performance.
+Step 9 and 10 introduces a different smoothing prameter (Step 7 had a default smoothing of 1). Step 9 has a smoothing value of 0.0001 which is very small but it affects the posteriori probability.
 The performance of step 7 and 8 are:
                precision    recall  f1-score   support
 
-     business       0.98      0.94      0.96        93
-entertainment       0.97      0.89      0.93        72
-     politics       0.96      0.96      0.96        75
-        sport       1.00      1.00      1.00       100
-         tech       0.90      0.99      0.95       105
-
-     accuracy                           0.96       445
-    macro avg       0.96      0.95      0.96       445
- weighted avg       0.96      0.96      0.96       445
-
-Accuracy: 0.9595505617977528
-Macro-average accuracy: 0.9578069466765118
-Weighted-average accuracy: 0.9578069466765118
-
-The performance of step 9 are:
-               precision    recall  f1-score   support
-
-     business       0.98      0.94      0.96        93
-entertainment       0.97      0.94      0.96        72
-     politics       0.97      0.96      0.97        75
-        sport       1.00      1.00      1.00       100
-         tech       0.93      0.99      0.96       105
-
-     accuracy                           0.97       445
-    macro avg       0.97      0.97      0.97       445
- weighted avg       0.97      0.97      0.97       445
-
-Accuracy: 0.9685393258426966
-Macro-average accuracy: 0.96775174671189
-Weighted-average accuracy: 0.96775174671189
-
-The performance of step 10 are:
-               precision    recall  f1-score   support
-
-     business       0.97      0.95      0.96        93
-entertainment       0.99      0.96      0.97        72
-     politics       0.96      0.99      0.97        75
-        sport       1.00      1.00      1.00       100
-         tech       0.95      0.97      0.96       105
+     business       0.98      0.94      0.96        98
+entertainment       0.97      0.97      0.97        62
+     politics       0.93      0.99      0.96        79
+        sport       1.00      0.99      1.00       119
+         tech       0.98      0.98      0.98        87
 
      accuracy                           0.97       445
     macro avg       0.97      0.97      0.97       445
  weighted avg       0.97      0.97      0.97       445
 
 Accuracy: 0.9730337078651685
-Macro-average accuracy: 0.972860217303128
-Weighted-average accuracy: 0.972860217303128
+Macro-average F1: 0.9711845137022607
+Weighted-average F1: 0.9711845137022607
 
-The performances are similar between step 7 and 9-10 but we can see that the F1 metric for steps 9-10 are better at 0.97 instead of 0.96.
-The accuracy is also a little bigger from 0.956 to 0.973. This is not a big difference overall but this difference can be explained by the smoothing that enables all the words of a text to be taken into account when determining the probability of that text to belong to a certain class.
+The performance of step 9 are:
+               precision    recall  f1-score   support
+
+     business       0.97      0.97      0.97        98
+entertainment       0.95      0.97      0.96        62
+     politics       0.96      0.99      0.97        79
+        sport       1.00      0.99      1.00       119
+         tech       0.99      0.97      0.98        87
+
+     accuracy                           0.98       445
+    macro avg       0.97      0.98      0.98       445
+ weighted avg       0.98      0.98      0.98       445
+
+Accuracy: 0.9775280898876404
+Macro-average F1: 0.9753825063731704
+Weighted-average F1: 0.9753825063731704
+
+The performance of step 10 are:
+               precision    recall  f1-score   support
+
+     business       0.98      0.95      0.96        98
+entertainment       0.97      0.97      0.97        62
+     politics       0.94      0.99      0.96        79
+        sport       1.00      0.99      1.00       119
+         tech       0.98      0.98      0.98        87
+
+     accuracy                           0.98       445
+    macro avg       0.97      0.97      0.97       445
+ weighted avg       0.98      0.98      0.98       445
+
+Accuracy: 0.9752808988764045
+Macro-average F1: 0.9734455106730386
+Weighted-average F1: 0.9734455106730386
+
+The performances are very similar between step 7 and 9-10, but they are nonetheless different because the different smmothing values have changed the probability of words appearing in the classes. It is intriguing to see that the smoothing of 0.0001 bears the best performances because I would imagine that such a small smoothing close to 0 would actually be detrimental to the predictions. On the other hand, as the smoothing goes higher, the likelihood probability moves toward an uniform distribution, so a smaller smoothing would in fact highlight the fact that some words do very not fit in certain classes.
