@@ -5,31 +5,31 @@ Gaussian naive bayes classifier with parameters:
 
 1. Confusion matrix
 
-[[ 9  0  0  0  0]
- [ 0  1  0  0  0]
- [ 0  0  6  0  0]
- [ 0  0  0 13  0]
- [ 1  2  4  0 14]]
+[[ 3  0  0  0  0]
+ [ 0  3  0  0  0]
+ [ 0  0  7  0  0]
+ [ 0  0  0 11  1]
+ [ 2  1  0  0 22]]
 
 2. precision, recall, and F1-measure for each class
 
               precision    recall  f1-score   support
 
-       drugA       0.90      1.00      0.95         9
-       drugB       0.33      1.00      0.50         1
-       drugC       0.60      1.00      0.75         6
-       drugX       1.00      1.00      1.00        13
-       drugY       1.00      0.67      0.80        21
+       drugA       0.60      1.00      0.75         3
+       drugB       0.75      1.00      0.86         3
+       drugC       1.00      1.00      1.00         7
+       drugX       1.00      0.92      0.96        12
+       drugY       0.96      0.88      0.92        25
 
-    accuracy                           0.86        50
-   macro avg       0.77      0.93      0.80        50
-weighted avg       0.92      0.86      0.87        50
+    accuracy                           0.92        50
+   macro avg       0.86      0.96      0.90        50
+weighted avg       0.94      0.92      0.92        50
 
 3. accuracy, macro-average F1 and weighted-average F1 of the model
 
-Accuracy: 0.86
-Macro-average: 0.7994736842105263
-Weighted-average: 0.7994736842105263
+Accuracy: 0.92
+Macro-average: 0.8960662525879917
+Weighted-average: 0.8960662525879917
 
 ------------------------------------------------------------------
 
@@ -38,31 +38,31 @@ Decision tree classifier with parameters:
 
 1. Confusion matrix
 
-[[ 9  0  0  0  0]
- [ 0  1  0  0  0]
- [ 0  0  6  0  0]
- [ 0  0  0 13  0]
- [ 0  0  0  0 21]]
+[[ 3  0  0  0  0]
+ [ 0  3  0  0  0]
+ [ 0  0  7  0  0]
+ [ 0  0  0 11  1]
+ [ 0  0  0  0 25]]
 
 2. precision, recall, and F1-measure for each class
 
               precision    recall  f1-score   support
 
-       drugA       1.00      1.00      1.00         9
-       drugB       1.00      1.00      1.00         1
-       drugC       1.00      1.00      1.00         6
-       drugX       1.00      1.00      1.00        13
-       drugY       1.00      1.00      1.00        21
+       drugA       1.00      1.00      1.00         3
+       drugB       1.00      1.00      1.00         3
+       drugC       1.00      1.00      1.00         7
+       drugX       1.00      0.92      0.96        12
+       drugY       0.96      1.00      0.98        25
 
-    accuracy                           1.00        50
-   macro avg       1.00      1.00      1.00        50
-weighted avg       1.00      1.00      1.00        50
+    accuracy                           0.98        50
+   macro avg       0.99      0.98      0.99        50
+weighted avg       0.98      0.98      0.98        50
 
 3. accuracy, macro-average F1 and weighted-average F1 of the model
 
-Accuracy: 1.0
-Macro-average: 1.0
-Weighted-average: 1.0
+Accuracy: 0.98
+Macro-average: 0.9873827791986359
+Weighted-average: 0.9873827791986359
 
 ------------------------------------------------------------------
 
@@ -73,31 +73,31 @@ Top decision tree classifier with parameters:
 
 1. Confusion matrix
 
-[[ 9  0  0  0  0]
- [ 0  1  0  0  0]
- [ 0  0  6  0  0]
- [ 0  0  0 13  0]
- [ 0  0  0  0 21]]
+[[ 3  0  0  0  0]
+ [ 0  3  0  0  0]
+ [ 0  0  7  0  0]
+ [ 0  0  0 11  1]
+ [ 0  0  0  0 25]]
 
 2. precision, recall, and F1-measure for each class
 
               precision    recall  f1-score   support
 
-       drugA       1.00      1.00      1.00         9
-       drugB       1.00      1.00      1.00         1
-       drugC       1.00      1.00      1.00         6
-       drugX       1.00      1.00      1.00        13
-       drugY       1.00      1.00      1.00        21
+       drugA       1.00      1.00      1.00         3
+       drugB       1.00      1.00      1.00         3
+       drugC       1.00      1.00      1.00         7
+       drugX       1.00      0.92      0.96        12
+       drugY       0.96      1.00      0.98        25
 
-    accuracy                           1.00        50
-   macro avg       1.00      1.00      1.00        50
-weighted avg       1.00      1.00      1.00        50
+    accuracy                           0.98        50
+   macro avg       0.99      0.98      0.99        50
+weighted avg       0.98      0.98      0.98        50
 
 3. accuracy, macro-average F1 and weighted-average F1 of the model
 
-Accuracy: 1.0
-Macro-average: 1.0
-Weighted-average: 1.0
+Accuracy: 0.98
+Macro-average: 0.9873827791986359
+Weighted-average: 0.9873827791986359
 
 ------------------------------------------------------------------
 
@@ -106,31 +106,31 @@ Perceptron classifier with parameters:
 
 1. Confusion matrix
 
-[[ 3  2  0  0  4]
- [ 0  1  0  0  0]
- [ 0  2  0  0  4]
- [ 0  8  0  0  5]
- [ 0  5  0  0 16]]
+[[ 2  0  0  1  0]
+ [ 0  0  0  3  0]
+ [ 0  0  0  5  2]
+ [ 1  0  0  9  2]
+ [ 1  0  0  4 20]]
 
 2. precision, recall, and F1-measure for each class
 
               precision    recall  f1-score   support
 
-       drugA       1.00      0.33      0.50         9
-       drugB       0.06      1.00      0.11         1
-       drugC       0.00      0.00      0.00         6
-       drugX       0.00      0.00      0.00        13
-       drugY       0.55      0.76      0.64        21
+       drugA       0.50      0.67      0.57         3
+       drugB       0.00      0.00      0.00         3
+       drugC       0.00      0.00      0.00         7
+       drugX       0.41      0.75      0.53        12
+       drugY       0.83      0.80      0.82        25
 
-    accuracy                           0.40        50
-   macro avg       0.32      0.42      0.25        50
-weighted avg       0.41      0.40      0.36        50
+    accuracy                           0.62        50
+   macro avg       0.35      0.44      0.38        50
+weighted avg       0.54      0.62      0.57        50
 
 3. accuracy, macro-average F1 and weighted-average F1 of the model
 
-Accuracy: 0.4
-Macro-average: 0.24905263157894736
-Weighted-average: 0.24905263157894736
+Accuracy: 0.62
+Macro-average: 0.38343337334933975
+Weighted-average: 0.38343337334933975
 
 ------------------------------------------------------------------
 
@@ -142,31 +142,31 @@ Multi layered perceptron classifier with parameters:
 
 1. Confusion matrix
 
-[[ 0  0  0  2  7]
- [ 0  0  0  1  0]
- [ 0  0  0  1  5]
- [ 0  0  0  6  7]
- [ 0  0  0  4 17]]
+[[ 0  0  0  1  2]
+ [ 0  0  0  3  0]
+ [ 0  0  0  4  3]
+ [ 0  0  0  6  6]
+ [ 0  0  0  3 22]]
 
 2. precision, recall, and F1-measure for each class
 
               precision    recall  f1-score   support
 
-       drugA       0.00      0.00      0.00         9
-       drugB       0.00      0.00      0.00         1
-       drugC       0.00      0.00      0.00         6
-       drugX       0.43      0.46      0.44        13
-       drugY       0.47      0.81      0.60        21
+       drugA       0.00      0.00      0.00         3
+       drugB       0.00      0.00      0.00         3
+       drugC       0.00      0.00      0.00         7
+       drugX       0.35      0.50      0.41        12
+       drugY       0.67      0.88      0.76        25
 
-    accuracy                           0.46        50
-   macro avg       0.18      0.25      0.21        50
-weighted avg       0.31      0.46      0.37        50
+    accuracy                           0.56        50
+   macro avg       0.20      0.28      0.23        50
+weighted avg       0.42      0.56      0.48        50
 
 3. accuracy, macro-average F1 and weighted-average F1 of the model
 
-Accuracy: 0.46
-Macro-average: 0.20818713450292398
-Weighted-average: 0.20818713450292398
+Accuracy: 0.56
+Macro-average: 0.23448275862068968
+Weighted-average: 0.23448275862068968
 
 ------------------------------------------------------------------
 
@@ -177,31 +177,31 @@ Top multi layered perceptron classifier with parameters:
 
 1. Confusion matrix
 
-[[ 8  1  0  0  0]
- [ 0  1  0  0  0]
- [ 0  0  0  5  1]
- [ 0  0  0 10  3]
- [ 0  1  0  2 18]]
+[[ 2  1  0  0  0]
+ [ 0  3  0  0  0]
+ [ 0  0  0  6  1]
+ [ 0  0  0 12  0]
+ [ 1  0  0  1 23]]
 
 2. precision, recall, and F1-measure for each class
 
               precision    recall  f1-score   support
 
-       drugA       1.00      0.89      0.94         9
-       drugB       0.33      1.00      0.50         1
-       drugC       0.00      0.00      0.00         6
-       drugX       0.59      0.77      0.67        13
-       drugY       0.82      0.86      0.84        21
+       drugA       0.67      0.67      0.67         3
+       drugB       0.75      1.00      0.86         3
+       drugC       0.00      0.00      0.00         7
+       drugX       0.63      1.00      0.77        12
+       drugY       0.96      0.92      0.94        25
 
-    accuracy                           0.74        50
-   macro avg       0.55      0.70      0.59        50
-weighted avg       0.68      0.74      0.70        50
+    accuracy                           0.80        50
+   macro avg       0.60      0.72      0.65        50
+weighted avg       0.72      0.80      0.75        50
 
 3. accuracy, macro-average F1 and weighted-average F1 of the model
 
-Accuracy: 0.74
-Macro-average: 0.5890104879160967
-Weighted-average: 0.5890104879160967
+Accuracy: 0.8
+Macro-average: 0.6473557164801405
+Weighted-average: 0.6473557164801405
 
 
 
@@ -211,49 +211,49 @@ Weighted-average: 0.5890104879160967
 *****************************************************
 
 **** Gaussian naive bayes classifier ****
-Average accuracy: 0.860000
-Average macro-average f1: 0.799474
-Average weighted-average f1: 0.866526
+Average accuracy: 0.920000
+Average macro-average f1: 0.896066
+Average weighted-average f1: 0.924327
 Standard deviation accuracy: 0.000000
 Standard deviation macro-average f1: 0.000000
 Standard deviation weighted-average f1: 0.000000
 
 **** Decision tree classifier ****
-Average accuracy: 1.000000
-Average macro-average f1: 1.000000
-Average weighted-average f1: 1.000000
+Average accuracy: 0.980000
+Average macro-average f1: 0.987383
+Average weighted-average f1: 0.979761
 Standard deviation accuracy: 0.000000
 Standard deviation macro-average f1: 0.000000
 Standard deviation weighted-average f1: 0.000000
 
 **** Top decision tree classifier ****
-Average accuracy: 1.000000
-Average macro-average f1: 1.000000
-Average weighted-average f1: 1.000000
+Average accuracy: 0.980000
+Average macro-average f1: 0.987383
+Average weighted-average f1: 0.979761
 Standard deviation accuracy: 0.000000
 Standard deviation macro-average f1: 0.000000
 Standard deviation weighted-average f1: 0.000000
 
 **** Perceptron classifier ****
-Average accuracy: 0.400000
-Average macro-average f1: 0.249053
-Average weighted-average f1: 0.360905
+Average accuracy: 0.620000
+Average macro-average f1: 0.383433
+Average weighted-average f1: 0.569508
 Standard deviation accuracy: 0.000000
 Standard deviation macro-average f1: 0.000000
 Standard deviation weighted-average f1: 0.000000
 
 **** Multi layered perceptron classifier ****
-Average accuracy: 0.464000
-Average macro-average f1: 0.210095
-Average weighted-average f1: 0.370114
-Standard deviation accuracy: 0.008000
-Standard deviation macro-average f1: 0.005081
-Standard deviation weighted-average f1: 0.007527
+Average accuracy: 0.560000
+Average macro-average f1: 0.231691
+Average weighted-average f1: 0.477163
+Standard deviation accuracy: 0.015492
+Standard deviation macro-average f1: 0.008357
+Standard deviation weighted-average f1: 0.014235
 
 **** Top multi layered perceptron classifier ****
-Average accuracy: 0.716000
-Average macro-average f1: 0.578132
-Average weighted-average f1: 0.673190
-Standard deviation accuracy: 0.059195
-Standard deviation macro-average f1: 0.081937
-Standard deviation weighted-average f1: 0.070821
+Average accuracy: 0.768000
+Average macro-average f1: 0.609723
+Average weighted-average f1: 0.720006
+Standard deviation accuracy: 0.050754
+Standard deviation macro-average f1: 0.060755
+Standard deviation weighted-average f1: 0.050423

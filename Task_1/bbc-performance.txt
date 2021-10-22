@@ -2,30 +2,91 @@
 a) Multi-nomialNB default values, try 1
 
 b) Confusion matrix
-[[ 92   1   3   0   2]
- [  0  60   2   0   0]
- [  1   0  78   0   0]
- [  1   0   0 118   0]
- [  0   1   1   0  85]]
+[[95  0  3  0  0]
+ [ 1 71  0  0  1]
+ [ 1  0 90  0  0]
+ [ 0  1  0 98  0]
+ [ 0  0  0  0 84]]
 
 c) precision, recall, and F1-measure for each class
                precision    recall  f1-score   support
 
-     business       0.98      0.94      0.96        98
-entertainment       0.97      0.97      0.97        62
-     politics       0.93      0.99      0.96        79
-        sport       1.00      0.99      1.00       119
-         tech       0.98      0.98      0.98        87
+     business       0.98      0.97      0.97        98
+entertainment       0.99      0.97      0.98        73
+     politics       0.97      0.99      0.98        91
+        sport       1.00      0.99      0.99        99
+         tech       0.99      1.00      0.99        84
 
-     accuracy                           0.97       445
-    macro avg       0.97      0.97      0.97       445
- weighted avg       0.97      0.97      0.97       445
+     accuracy                           0.98       445
+    macro avg       0.98      0.98      0.98       445
+ weighted avg       0.98      0.98      0.98       445
 
 
 d) accuracy, macro-average F1 and weighted-average F1 of the model
-Accuracy: 0.9730337078651685
-Macro-average F1: 0.9711845137022607
-Weighted-average F1: 0.9711845137022607
+Accuracy: 0.9842696629213483
+Macro-average F1: 0.9841873773712969
+Weighted-average F1: 0.9841873773712969
+
+e) prior probability of each class
+business : 0.2292134831460674
+entertainment : 0.17348314606741572
+politics : 0.18741573033707865
+sport : 0.22966292134831462
+tech : 0.1802247191011236
+
+f) size of the vocabulary
+29421
+
+g) number of word-tokens in each class
+business : 164663
+entertainment : 124893
+politics : 185208
+sport : 162953
+tech : 198640
+
+h) number of word-tokens in entire corpus
+836357
+
+i) number and percentage of words with a frequency of 0 in each class
+Number of words with 0 frequency in class business : 17538
+Percentage of words with 0 frequency in class business : 59.61%
+Number of words with 0 frequency in class entertainment : 17746
+Percentage of words with 0 frequency in class entertainment : 60.32%
+Number of words with 0 frequency in class politics : 18201
+Percentage of words with 0 frequency in class politics : 61.86%
+Number of words with 0 frequency in class sport : 18850
+Percentage of words with 0 frequency in class sport : 64.07%
+Number of words with 0 frequency in class tech : 17323
+Percentage of words with 0 frequency in class tech : 58.88%
+
+------------------------------------------
+a) Multi-nomialNB default values, try 2
+
+b) Confusion matrix
+[[95  0  3  0  0]
+ [ 1 71  0  0  1]
+ [ 1  0 90  0  0]
+ [ 0  1  0 98  0]
+ [ 0  0  0  0 84]]
+
+c) precision, recall, and F1-measure for each class
+               precision    recall  f1-score   support
+
+     business       0.98      0.97      0.97        98
+entertainment       0.99      0.97      0.98        73
+     politics       0.97      0.99      0.98        91
+        sport       1.00      0.99      0.99        99
+         tech       0.99      1.00      0.99        84
+
+     accuracy                           0.98       445
+    macro avg       0.98      0.98      0.98       445
+ weighted avg       0.98      0.98      0.98       445
+
+
+d) accuracy, macro-average F1 and weighted-average F1 of the model
+Accuracy: 0.9842696629213483
+Macro-average F1: 0.9841873773712969
+Weighted-average F1: 0.9841873773712969
 
 e) prior probability of each class
 business : 0.2292134831460674
@@ -67,34 +128,38 @@ k) 2 favorite words and their log-prob
 1st favorite word: the, log-prob: -2.7656552591367776
 2nd favorite word: to, log-prob: -3.505669915078643
 
+k) 2 favorite words and their log-prob
+1st favorite word: the, log-prob: -2.7656552591367776
+2nd favorite word: to, log-prob: -3.505669915078643
+
 ------------------------------------------
 a) Multi-nomialNB default values, try 2
 
 b) Confusion matrix
-[[ 92   1   3   0   2]
- [  0  60   2   0   0]
- [  1   0  78   0   0]
- [  1   0   0 118   0]
- [  0   1   1   0  85]]
+[[95  0  3  0  0]
+ [ 1 71  0  0  1]
+ [ 1  0 90  0  0]
+ [ 0  1  0 98  0]
+ [ 0  0  0  0 84]]
 
 c) precision, recall, and F1-measure for each class
                precision    recall  f1-score   support
 
-     business       0.98      0.94      0.96        98
-entertainment       0.97      0.97      0.97        62
-     politics       0.93      0.99      0.96        79
-        sport       1.00      0.99      1.00       119
-         tech       0.98      0.98      0.98        87
+     business       0.98      0.97      0.97        98
+entertainment       0.99      0.97      0.98        73
+     politics       0.97      0.99      0.98        91
+        sport       1.00      0.99      0.99        99
+         tech       0.99      1.00      0.99        84
 
-     accuracy                           0.97       445
-    macro avg       0.97      0.97      0.97       445
- weighted avg       0.97      0.97      0.97       445
+     accuracy                           0.98       445
+    macro avg       0.98      0.98      0.98       445
+ weighted avg       0.98      0.98      0.98       445
 
 
 d) accuracy, macro-average F1 and weighted-average F1 of the model
-Accuracy: 0.9730337078651685
-Macro-average F1: 0.9711845137022607
-Weighted-average F1: 0.9711845137022607
+Accuracy: 0.9842696629213483
+Macro-average F1: 0.9841873773712969
+Weighted-average F1: 0.9841873773712969
 
 e) prior probability of each class
 business : 0.2292134831460674
@@ -140,30 +205,30 @@ k) 2 favorite words and their log-prob
 a) Multi-nomialNB smoothing=0.0001, try 1
 
 b) Confusion matrix
-[[ 95   1   1   0   1]
- [  0  60   2   0   0]
- [  1   0  78   0   0]
- [  1   0   0 118   0]
- [  1   2   0   0  84]]
+[[93  0  5  0  0]
+ [ 1 71  0  0  1]
+ [ 1  0 90  0  0]
+ [ 0  0  0 99  0]
+ [ 0  0  0  0 84]]
 
 c) precision, recall, and F1-measure for each class
                precision    recall  f1-score   support
 
-     business       0.97      0.97      0.97        98
-entertainment       0.95      0.97      0.96        62
-     politics       0.96      0.99      0.97        79
-        sport       1.00      0.99      1.00       119
-         tech       0.99      0.97      0.98        87
+     business       0.98      0.95      0.96        98
+entertainment       1.00      0.97      0.99        73
+     politics       0.95      0.99      0.97        91
+        sport       1.00      1.00      1.00        99
+         tech       0.99      1.00      0.99        84
 
      accuracy                           0.98       445
-    macro avg       0.97      0.98      0.98       445
+    macro avg       0.98      0.98      0.98       445
  weighted avg       0.98      0.98      0.98       445
 
 
 d) accuracy, macro-average F1 and weighted-average F1 of the model
-Accuracy: 0.9775280898876404
-Macro-average F1: 0.9753825063731704
-Weighted-average F1: 0.9753825063731704
+Accuracy: 0.9820224719101124
+Macro-average F1: 0.982333291355971
+Weighted-average F1: 0.982333291355971
 
 e) prior probability of each class
 business : 0.2292134831460674
@@ -209,30 +274,30 @@ k) 2 favorite words and their log-prob
 a) Multi-nomialNB smoothing=0.9, try 1
 
 b) Confusion matrix
-[[ 93   1   2   0   2]
- [  0  60   2   0   0]
- [  1   0  78   0   0]
- [  1   0   0 118   0]
- [  0   1   1   0  85]]
+[[95  0  3  0  0]
+ [ 1 71  0  0  1]
+ [ 1  0 90  0  0]
+ [ 0  1  0 98  0]
+ [ 0  0  0  0 84]]
 
 c) precision, recall, and F1-measure for each class
                precision    recall  f1-score   support
 
-     business       0.98      0.95      0.96        98
-entertainment       0.97      0.97      0.97        62
-     politics       0.94      0.99      0.96        79
-        sport       1.00      0.99      1.00       119
-         tech       0.98      0.98      0.98        87
+     business       0.98      0.97      0.97        98
+entertainment       0.99      0.97      0.98        73
+     politics       0.97      0.99      0.98        91
+        sport       1.00      0.99      0.99        99
+         tech       0.99      1.00      0.99        84
 
      accuracy                           0.98       445
-    macro avg       0.97      0.97      0.97       445
+    macro avg       0.98      0.98      0.98       445
  weighted avg       0.98      0.98      0.98       445
 
 
 d) accuracy, macro-average F1 and weighted-average F1 of the model
-Accuracy: 0.9752808988764045
-Macro-average F1: 0.9734455106730386
-Weighted-average F1: 0.9734455106730386
+Accuracy: 0.9842696629213483
+Macro-average F1: 0.9841873773712969
+Weighted-average F1: 0.9841873773712969
 
 e) prior probability of each class
 business : 0.2292134831460674
